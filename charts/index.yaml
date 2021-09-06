@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 3.9.5
-    created: "2021-09-06T20:45:11.9785046+03:00"
+    created: "2021-09-06T21:40:10.8100917+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -14,7 +14,7 @@ entries:
       version: 1.x.x
     description: Open source message broker software that implements the Advanced
       Message Queuing Protocol (AMQP)
-    digest: 6d0bf2f0fd4f8e9bff33a27160397231c852e8d2d65d9164fa14d5ee897cdbda
+    digest: ce5c0ab056a4e56e7a1a6cfaa0b4450420d83710d699519bbe1a81e61864e2ff
     home: https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq
     icon: https://bitnami.com/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
     keywords:
@@ -31,4 +31,4 @@ entries:
     urls:
     - https://euhenimoiseenko.github.io/my-helm-charts/rabbitmq-8.21.0.tgz
     version: 8.21.0
-generated: "2021-09-06T20:45:11.9690044+03:00"
+generated: "2021-09-06T21:40:10.8002414+03:00"
