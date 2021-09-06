@@ -14,7 +14,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: aksnctaprodstorageclass
+  storageClass: ""
 
 ## @section RabitMQ Image parameters
 ## Bitnami RabbitMQ image version
@@ -34,7 +34,7 @@ image:
   ## set to true if you would like to see extra information on logs
   ## It turns BASH and/or NAMI debugging in the image
   ##
-  debug: true
+  debug: false
 
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
@@ -407,7 +407,7 @@ extraSecretsPrependReleaseName: false
 
 ## @param replicaCount Number of RabbitMQ replicas to deploy
 ##
-replicaCount: 3
+replicaCount: 1
 
 ## @param schedulerName Use an alternate scheduler, e.g. "stork".
 ## ref: https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
@@ -559,7 +559,7 @@ livenessProbe:
   initialDelaySeconds: 120
   timeoutSeconds: 20
   periodSeconds: 30
-  failureThreshold: 600
+  failureThreshold: 6
   successThreshold: 1
 ## Configure RabbitMQ containers' extra options for readiness probe
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/#configure-probes
@@ -714,7 +714,7 @@ service:
 
   ## @param service.portName Amqp service port name
   ##
-  ##portName: amqp
+  portName: amqp
 
   ## @param service.tlsPort Amqp TLS port
   ##
